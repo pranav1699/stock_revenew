@@ -30,7 +30,7 @@ def main():
     currency = fb.info['financialCurrency']
     image = fb.info['logo_url']
     st.header("Revenue")
-    st.image(image)
+    st.image(image,width=50)
     col1, col2 = st.columns(2)
     with col1:
         st.metric(name, f"${revenue}", revenue_percent)
