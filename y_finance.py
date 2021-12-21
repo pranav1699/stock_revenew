@@ -14,7 +14,6 @@ def data_csv(filename):
 
 
 def main():
-    st.beta_set_page_config(page_title='Stocks Revenew')
 
     datas = data_csv("nasdaq_screener_1640095939797.csv")
 
