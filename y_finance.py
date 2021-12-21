@@ -27,7 +27,7 @@ def main():
     total_cash = numerize.numerize(fb.info['totalCash'])
     totalCashPerShare = numerize.numerize(fb.info['totalCashPerShare'])
     revenue_percent = f"{revenue_increase} %"
-
+    currency = fb.info['financialCurrency']
     image = fb.info['logo_url']
     st.header("Revenue")
     st.image(image, width=50)
@@ -38,6 +38,7 @@ def main():
     with col2:
         st.write("Total Cash : ", '$', total_cash)
         st.write("Total Cash Per Share : ", '$', totalCashPerShare)
+        st.write("Financial Currency : ",currency)
     
     with st.expander("Description"):
         st.write(summary)
