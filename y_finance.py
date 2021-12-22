@@ -4,7 +4,7 @@ import json
 import streamlit as st
 from numerize import numerize
 
-
+st.set_page_config(page_title="NASDAQ symbols",page_icon="📊")
 @st.cache
 def data_csv(filename):
     data = pd.read_csv(filename)
